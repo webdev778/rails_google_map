@@ -28,6 +28,7 @@ Specification summary:
 * Versions up-to-date.
 * Ruby Style Guide.
 * Json serialization
+* Google Map view
 
 Here is its counterpart client mobile app that consumes data from this api ->
 [android-base](https://github.com/jordifierro/android-base)

@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       post   'users/reset_password' => 'users#reset_password'
       resources :users, only: [:create, :destroy]
       resources :notes
+      resources :tickets, only: [:create]
     end
   end
 
@@ -25,4 +26,8 @@ Rails.application.routes.draw do
                                      as: 'users_confirm_reset'
   get 'privacy',                     to: 'pages#privacy'
   get 'terms',                       to: 'pages#terms'
+
+  
+  get 'ticket/:id',                  to: 'tickets#show',  as: 'ticket'
+  root to: 'tickets#index'
 end

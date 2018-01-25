@@ -1,0 +1,45 @@
+
+<h1>Tickets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Request number</th>
+      <th>Sequence number</th>
+      <th>Request type</th>
+      <th>Response due date time</th>
+      <th>Sacode1</th>
+      <th>Sacode2</th>
+      <th>Company name</th>
+      <th>Address</th>
+      <th>Crew on site</th>
+      <th>Well know text</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tickets.each do |ticket| %>
+      <tr>
+        <td><%= ticket.request_number %></td>
+        <td><%= ticket.sequence_number %></td>
+        <td><%= ticket.request_type %></td>
+        <td><%= ticket.response_due_date_time %></td>
+        <td><%= ticket.sacode1 %></td>
+        <td><%= ticket.sacode2 %></td>
+        <td><%= ticket.company_name %></td>
+        <td><%= ticket.address %></td>
+        <td><%= ticket.crew_on_site %></td>
+        <td><%= ticket.well_know_text %></td>
+        <td><%= ticket.created_at %></td>
+        <td><%= ticket.updated_at %></td>
+        <td><%= link_to 'Show', ticket %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

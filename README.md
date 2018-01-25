@@ -1,4 +1,4 @@
-# Rails Api Base
+# Rails Api Base + Google Map
 
 [![Code Climate](https://codeclimate.com/github/jordifierro/rails-api-base/badges/gpa.svg)](https://codeclimate.com/github/jordifierro/rails-api-base)
 [![Test Coverage](https://codeclimate.com/github/jordifierro/rails-api-base/badges/coverage.svg)](https://codeclimate.com/github/jordifierro/rails-api-base/coverage)
@@ -9,9 +9,8 @@
 
 This projects aims to be:
 
-* An api example to discuss about Rails
- setup and development.
 * A basic template to start projects from it.
+* A way to integrate with Google Map in Rails
 
 Specification summary:
 
@@ -298,5 +297,3 @@ rubocop
 
 Unfortunately, there are no contributors yet.
 
-______________________
-http://jordifierro.com

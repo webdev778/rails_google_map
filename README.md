@@ -35,7 +35,7 @@ Here is its counterpart client mobile app that consumes data from this api ->
 
 ## Quick start
 
-* Install ruby version 2.3.0 and set it with your ruby environment manager
+* Install ruby version 2.4.0 and set it with your ruby environment manager
 ([more info here](https://www.ruby-lang.org/en/documentation/installation/)).
 
 * Install Postgres and start the PostgreSQL server in the foreground
@@ -43,48 +43,12 @@ Here is its counterpart client mobile app that consumes data from this api ->
 
 * Clone the repository and get inside it:
 ```
-git clone git://github.com/jordifierro/rails-api-base.git --origin rails-api-base your-project-name
+git clone https://github.com/yaodev778/rails_google_map.git your-project-name
 cd your-project-name
 ```
-
-* Rename whole project and reset README.md:
-```
-./bin/rename_project YourProjectName
-```
-
-* Remove all 'note' related code (optional):
-```
-./bin/remove_notes
-```
-
-* Create a postgres role to let rails manage the db:
-```
-./bin/create_psql_user yourprojectname
-```
-
-* Setup the gems and databases:
-```
-./bin/setup
-```
-
 * Run tests:
 ```
 rspec
-```
-
-* Once all tests are green, create a new remote repository
-and then execute this to reset the repo and push it:
-```
-./bin/reset_git https://github.com/yourusername/your-project-name.git
-```
-
-That's it, you can now start developing your own app!
-
-(While developing on localhost, start [mailcatcher](https://github.com/sj26/mailcatcher)
-in order to receive user confirmation and recover password emails)
-```
-gem install mailcatcher
-mailcatcher
 ```
 
 ## Documentation
@@ -295,5 +259,5 @@ rubocop
 
 #### Contributors
 
-Unfortunately, there are no contributors yet.
+
 
